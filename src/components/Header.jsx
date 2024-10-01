@@ -42,9 +42,9 @@ const Header = () => {
 
       {/* Right Part */}
       <div className="flex items-center">
-        <div className="max-[1630px]:hidden mr-[10px] w-[210px] gap-1 bg-[hsla(0,0%,100%,.06)] flex items-center text-[12px] py-[7px] px-[8px] font-['HarmonyOs_Sans_Regular'] rounded-[4px] text-[#909090]/90">
+        <div className="max-[1630px]:hidden mr-[10px] w-[240px] gap-1 bg-[hsla(0,0%,100%,.06)] flex items-center text-[12px] py-[7px] px-[8px] font-['HarmonyOs_Sans_Regular'] rounded-[4px] text-[#909090]/90">
           <CiSearch className="text-[16px]" />
-          <p>Buscar criptos, productos</p>
+          <p>Kriptovalyutalarni, tovarlarni qidirish</p>
         </div>
         <CiSearch className="text-[16px] 2xl:hidden" />
         <HeaderItem>Aktivlar</HeaderItem>
