@@ -15,10 +15,10 @@ const Header = () => {
         {/* Switcher */}
         <div className="flex font-['HarmonyOs_Sans_Regular'] items-center text-[12px] rounded-[4px]  ml-[25px] border-[1px] border-[hsla(0,0%,100%,.25)]">
           <div className="py-[4px] px-[12px] bg-white text-main rounded-[3px] shadow-[0_4px_4px_rgba(0,0,0,.1)]">
-            Exchange
+            Ayirboshlash
           </div>
           <div className="py-[4px] px-[12px] bg-[hsla(0,0%,100%,.15)]  rounded-[3px]">
-            Wallet
+            Hamyon
           </div>
         </div>
         {/* Line vertical */}
@@ -27,24 +27,24 @@ const Header = () => {
         {/* Navigation */}
 
         <nav className="flex text-[14px] max-lg:hidden">
-          <HeaderItem>Kripto sotib oling</HeaderItem>
-          <HeaderItem>Kashf qiling</HeaderItem>
+          <HeaderItem>Kriptovalyuta sotib olish</HeaderItem>
+          <HeaderItem>Kashf qilish</HeaderItem>
           <HeaderItem>Savdo</HeaderItem>
-          <HeaderItem>Pul ishlang</HeaderItem>
+          <HeaderItem>Pul ishlash</HeaderItem>
           <HeaderItem>Yaratish</HeaderItem>
           <HeaderItem>Institutsional</HeaderItem>
           <HeaderItem arrowOff className="max-[1280px]:hidden">
             Akademiya
           </HeaderItem>
-          <HeaderItem>Keyinchalik</HeaderItem>
+          <HeaderItem>Ko&apos;proq</HeaderItem>
         </nav>
       </div>
 
       {/* Right Part */}
       <div className="flex items-center">
-        <div className="max-[1630px]:hidden mr-[10px] w-[220px] gap-1 bg-[hsla(0,0%,100%,.06)] flex items-center text-[12px] py-[7px] px-[8px] font-['HarmonyOs_Sans_Regular'] rounded-[4px] text-[#909090]/90">
+        <div className="max-[1630px]:hidden mr-[10px] w-[210px] gap-1 bg-[hsla(0,0%,100%,.06)] flex items-center text-[12px] py-[7px] px-[8px] font-['HarmonyOs_Sans_Regular'] rounded-[4px] text-[#909090]/90">
           <CiSearch className="text-[16px]" />
-          <p>Kriptolarni, mahsulotlarni qidiring</p>
+          <p>Buscar criptos, productos</p>
         </div>
         <CiSearch className="text-[16px] 2xl:hidden" />
         <HeaderItem>Aktivlar</HeaderItem>

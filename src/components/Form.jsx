@@ -102,7 +102,7 @@ const Form = ({ onView }) => {
           } py-[5px] px-[12px] flex items-center justify-between w-full`}
         >
           <div className="px-[8px] pt-[4px]">
-            <div className="text-[14px]">Siz to&apos;laysiz</div>
+            <div className="text-[14px]">Siz to'laysiz</div>
             <input
               placeholder="0,00"
               min={0}

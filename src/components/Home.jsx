@@ -7,10 +7,10 @@ const Home = ({ onView }) => {
       <div className="w-[1248px] flex px-[104px] relative">
         <div className="px-[12px]">
           <h1 className="text-[64px] leading-[82px] pt-[50px] max-w-[90%] mb-[16px]">
-            Comprar USDT en pocos pasos
+            Bir necha oddiy qadamda USDT sotib olish
           </h1>
           <p className="text-[24px] leading-[33px]">
-            Bitcoin, Ethereum, Tether, Solana va boshqa mashhur kriptolar
+            Bitcoin, Ethereum, Tether, Solana va boshqa mashhur kriptovalyutalar
           </p>
         </div>
         <Form onView={onView} />
