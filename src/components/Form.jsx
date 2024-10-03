@@ -19,9 +19,9 @@ const Form = ({ onView }) => {
       );
       const dataFromBack = response.data;
       setActiveCurrency({
-        name: "MXN",
-        price: dataFromBack.MXN,
-        image: URLS.mxn,
+        name: "UZS",
+        price: "12 759.40",
+        image: "UZB.jpg",
       });
       setData([
         {
@@ -148,7 +148,7 @@ const Form = ({ onView }) => {
             onClick={() => setOpenChange(!openChange)}
           >
             <img
-              src={activeCurrency.image}
+              src="images/UZB.jpg"
               alt=""
               className="w-[24px] h-[24px] rounded-[50%]"
             />
@@ -184,7 +184,7 @@ const Form = ({ onView }) => {
           </div>
         </div>
         <h3 className="text-[14px] mt-[10px] pl-[18px]">
-          52-362.950 {activeCurrency.name}
+          31 417 200.39 {activeCurrency.name}
         </h3>
 
         {/* ThIRD INPUT */}
