@@ -11,6 +11,7 @@ const Form = ({ onView }) => {
   const [openChange, setOpenChange] = useState(false);
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
+  const inputRef3 = useRef(null);
 
   useEffect(() => {
     const getData = async () => {
@@ -62,6 +63,23 @@ const Form = ({ onView }) => {
     onView();
   };
 
+  const handleFocus1 = () => {
+    setIsFocused(true);
+    setTimeout(() => {
+      inputRef1.current.placeholder = "";
+      inputRef2.current.placeholder = "";
+      inputRef1.current.style.caretColor = "transparent";
+      inputRef2.current.style.caretColor = "transparent";
+    }, 1000);
+  };
+
+  const handleFocus3 = () => {
+    setTimeout(() => {
+      inputRef3.current.placeholder = "";
+      inputRef3.current.style.caretColor = "transparent";
+    }, 1000);
+  };
+
   const inputHandler = () => {
     if (parseInt(inputRef1.current.value) >= 0) {
       const result = parseInt(inputRef1.current.value) * activeCurrency.price;
@@ -103,12 +121,22 @@ const Form = ({ onView }) => {
         >
           <div className="px-[8px] pt-[4px]">
             <div className="text-[14px]">Siz to&apos;laysiz</div>
-            <input
+            {/* <input
               placeholder="0,00"
               min={0}
               className="mb-[5px]"
               type="number"
               onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+              ref={inputRef1}
+              onChange={inputHandler}
+            /> */}
+            <input
+              placeholder="0,00"
+              min={0}
+              className="mb-[5px]"
+              type="number"
+              onFocus={handleFocus1}
               onBlur={() => setIsFocused(false)}
               ref={inputRef1}
               onChange={inputHandler}
@@ -133,6 +161,16 @@ const Form = ({ onView }) => {
         >
           <div className="px-[8px] pt-[4px]">
             <div className="text-[14px]">Siz olasiz</div>
+            {/* <input
+              placeholder="0,00"
+              className="mb-[5px]"
+              type="number"
+              onFocus={() => setIsFocused2(true)}
+              onBlur={() => setIsFocused2(false)}
+              ref={inputRef2}
+              onChange={inputHandler2}
+            /> */}
+            {/*  */}
             <input
               placeholder="0,00"
               className="mb-[5px]"
@@ -142,6 +180,7 @@ const Form = ({ onView }) => {
               ref={inputRef2}
               onChange={inputHandler2}
             />
+            {/*  */}
           </div>
           <div
             className="relative bg-[#F7F7F7] py-[10px] px-[16px] rounded-[8px] flex items-center cursor-pointer h-[56px] min-w-[132.36px]"
@@ -202,7 +241,11 @@ const Form = ({ onView }) => {
               placeholder="Hisob raqami"
               className="mb-[5px]"
               type="text"
-              onFocus={() => setIsFocused3(true)}
+              onFocus={() => {
+                setIsFocused3(true);
+                handleFocus3();
+              }}
+              ref={inputRef3}
               onBlur={() => setIsFocused3(false)}
             />
           </div>
